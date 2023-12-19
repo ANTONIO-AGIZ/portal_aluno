@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notas dos Alunos</title>
+  <!-- CSS do Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos adicionais */
+    body {
+      padding-top: 70px;
+      /* Ajuste na altura da barra de navegação */
+    }
+
+    .sidebar {
+      background-color: #d5d5d8;
+      /* Cor de fundo da coluna da sidebar */
+      color: rgb(10, 0, 0);
+      /* Cor do texto na sidebar */
+      height: 100vh;
+      /* Altura total da coluna da sidebar */
+    }
+
+    .profile-info {
+      padding: 20px;
+    }
+
+    .profile-info img {
+      max-width: 300px;
+      /* Tamanho máximo da imagem de perfil */
+      border-radius: 50%;
+      /* Para uma imagem de perfil circular */
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Notas dos Alunos</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Página Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Outra Página</a>
+            </li>
+            <!-- Adicione mais itens de menu conforme necessário -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Coluna da sidebar -->
+      <aside class="col-lg-3 sidebar">
+        <div class="profile-info text-center">
+          <img src="C:\Users\cidpop\Downloads\portal aluno\imagens\download1.jpg" alt="Foto de Perfil">
+          <p>Alessandro Bittencourt</p>
+          <p>Dono</p>
+        </div>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-house-door"></i> Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person-plus"></i> Cadastro
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-person"></i> Professores
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-people"></i> Alunos
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-people-fill"></i> Funcionários
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="bi bi-box-arrow-right"></i> Sair
+            </a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Conteúdo principal -->
+      <main class="col-lg-9 mt-lg-0 mt-4">
+        <!-- Tabela de notas -->
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Nome</th>
+              <th scope="col">N1</th>
+              <th scope="col">N2</th>
+              <th scope="col">N3</th>
+              <th scope="col">N4</th>
+              <th scope="col">N5</th>
+              <th scope="col">Média Final</th>
+              <th scope="col">Situação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Aqui você adicionará as linhas com as informações dos alunos -->
+            <tr>
+              <td>Antônio Manso Pacífico de Oliveira Sossegado</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Alucinética Honorata</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Braulio Saracura do Brejo</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Colapso Cardíaco da Silva</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Célio sai da Fossa</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Doriana Manteiga da Silva</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Dauto Indo para Baixo</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Hericlapiton da Silva</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Himineu Casamenticio das Dores Conjugais</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Imperador Juliano Reis</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>João Pensa Bem</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Magnésia Bisurada do Patrocínio</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Simplício Simplório da Simplicidade Simples</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Sueli Treta</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+
+            <tr>
+              <td>Tendinite Tomazio</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Um Mesmo de Almeida</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Vausdislaine de Freitas</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Veneza Americana Derecife</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Vicente Mais ou Menos de Souza</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+            <tr>
+              <td>Well Vai Bem de camões</td>
+              <td>8.0</td>
+              <td>7.5</td>
+              <td>6.0</td>
+              <td>9.0</td>
+              <td>7.8</td>
+              <td>7.66</td>
+              <td>Aprovado</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </main>
+    </div>
+  </div>
+
+  <!-- JavaScript do Bootstrap (opcional, para funcionalidades como dropdowns) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
